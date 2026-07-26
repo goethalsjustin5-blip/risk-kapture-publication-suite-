@@ -2,54 +2,53 @@
 
 A shareable executive briefing portal for the Risk Kapture disaster-readiness data platform.
 
-## Current release
+## Open the project
 
-The first working release includes:
+The website files are already complete enough to preview:
+
+- `index.html` — portal content and structure
+- `styles.css` — visual design and responsive layout
+- `app.js` — publication dialogs, glossary search, and theme controls
+
+## Publish online — simplified setup
+
+Automatic deployment is already installed through GitHub Actions.
+
+You only need to enable GitHub Pages once:
+
+1. Open this repository.
+2. Select **Settings**.
+3. Select **Pages** in the left menu.
+4. Under **Build and deployment → Source**, choose **GitHub Actions**.
+
+GitHub will then publish every new update automatically.
+
+Expected public address:
+
+`https://goethalsjustin5-blip.github.io/risk-kapture-publication-suite-/`
+
+> The repository is currently private. GitHub Pages supports private repositories on certain paid plans. If Pages is unavailable, change the repository visibility to **Public** under **Settings → General → Danger Zone → Change repository visibility**, then return to **Settings → Pages**.
+
+## Current release
 
 - Responsive executive portal
 - Light and dark themes
-- Publication-library overview
-- Investor, government, carrier, municipal, congressional, and master-volume outlines
-- Shared platform architecture
+- Investor, government, carrier, municipal, congressional, and master-strategy publication outlines
+- Shared platform architecture visualization
 - Pilot vertical-slice roadmap
 - Searchable glossary
-- Print-friendly styling
-
-## Project structure
-
-```text
-index.html      Main executive portal
-styles.css      Shared publication and interface design system
-app.js          Publication content, glossary, theme, and dialog interactions
-README.md       Project documentation
-```
+- Mobile and print formatting
+- Automatic GitHub Pages deployment workflow
 
 ## Local preview
 
-No build tools are required.
-
-1. Download or clone the repository.
-2. Open `index.html` in a modern browser.
-
-For a local web server:
+No build tools are required. Download the repository and open `index.html`, or run:
 
 ```bash
 python3 -m http.server 8000
 ```
 
 Then open `http://localhost:8000`.
-
-## GitHub Pages
-
-The portal is designed to run directly from the repository root. To publish it:
-
-1. Open the repository on GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the `main` branch and `/ (root)` folder.
-5. Save.
-
-GitHub will provide the public URL after deployment completes.
 
 ## Planned publication library
 
