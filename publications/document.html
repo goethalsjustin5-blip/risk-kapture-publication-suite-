@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Risk Kapture™ publication suite." />
+  <title>Risk Kapture™ Publication</title>
+  <link rel="stylesheet" href="publication.css" />
+</head>
+<body>
+  <div id="progress" class="progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="../index.html">RISK KAPTURE<sup>™</sup></a>
+    <nav aria-label="Publication navigation">
+      <a href="index.html">Publication library</a>
+      <a href="../index.html#platform">Platform</a>
+      <a href="../index.html#pilot">Pilot</a>
+    </nav>
+    <div class="header-actions">
+      <button id="copyLink" class="text-button" type="button">Copy link</button>
+      <button id="printDocument" class="text-button" type="button">Print / PDF</button>
+      <button id="themeToggle" class="icon-button" type="button" aria-label="Toggle theme">◐</button>
+    </div>
+  </header>
+
+  <main class="document-shell">
+    <section class="document-hero">
+      <div class="breadcrumbs"><a href="../index.html">Portal</a><span>/</span><a href="index.html">Publications</a><span>/</span><span>Current volume</span></div>
+      <div class="kicker">RISK KAPTURE™ PUBLICATION SUITE</div>
+      <h1 id="documentTitle"></h1>
+      <p id="documentSubtitle" class="document-subtitle"></p>
+      <p id="documentSummary" class="document-summary"></p>
+
+      <div class="document-meta">
+        <article class="meta-card"><span class="meta-label">Audience</span><strong id="documentAudience"></strong></article>
+        <article class="meta-card"><span class="meta-label">Purpose</span><strong id="documentPurpose"></strong></article>
+        <article class="meta-card"><span class="meta-label">Version</span><strong id="documentVersion"></strong></article>
+        <article class="meta-card"><span class="meta-label">Classification</span><strong id="documentClassification"></strong></article>
+      </div>
+    </section>
+
+    <aside class="status-note" aria-label="Document status">
+      <strong>STATUS</strong>
+      <p id="statusText"></p>
+    </aside>
+
+    <div class="document-layout">
+      <aside class="toc" aria-label="Table of contents">
+        <strong>CONTENTS</strong>
+        <ol id="tocList"></ol>
+      </aside>
+
+      <article class="document-body">
+        <section class="decision-card">
+          <span class="meta-label">Decision this document supports</span>
+          <h2>What should the reader decide?</h2>
+          <p id="documentDecision"></p>
+        </section>
+        <div id="documentContent"></div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="document-footer">
+    <div><strong>RISK KAPTURE™</strong><span>Publication-quality strategy draft</span></div>
+    <p>This material is for strategic discussion. Insurance coverage, claims handling, public-adjusting rules, procurement, grant eligibility, privacy, security, and federal-program requirements must be validated by qualified professionals before operational or external reliance.</p>
+  </footer>
+
+  <script src="documents.js"></script>
+  <script src="publication.js"></script>
+</body>
+</html>
