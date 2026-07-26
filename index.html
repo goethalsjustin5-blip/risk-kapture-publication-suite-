@@ -11,7 +11,7 @@
   <header class="topbar">
     <a class="brand" href="#top" aria-label="Risk Kapture home">RISK KAPTURE<sup>™</sup></a>
     <nav>
-      <a href="#suite">Publications</a>
+      <a href="publications/index.html">Publications</a>
       <a href="#platform">Platform</a>
       <a href="#pilot">Pilot</a>
       <a href="#glossary">Glossary</a>
@@ -21,16 +21,16 @@
 
   <main id="top">
     <section class="hero section-shell">
-      <div class="eyebrow">CONFIDENTIAL EXECUTIVE BRIEFING PORTAL</div>
+      <div class="eyebrow">EXECUTIVE BRIEFING & PUBLICATION PORTAL</div>
       <h1>Document before disaster.<br />Verify after disaster.<br /><span>Recover faster.</span></h1>
       <p class="lead">Risk Kapture™ is a disaster-readiness data platform designed to create trusted pre-loss records, accelerate post-loss documentation, and connect policyholders, carriers, municipalities, contractors, and public recovery programs through one structured data layer.</p>
       <div class="hero-actions">
-        <a class="button primary" href="#suite">Open publication suite</a>
+        <a class="button primary" href="publications/index.html">Open publication suite</a>
         <a class="button ghost" href="#pilot">Review the pilot</a>
       </div>
       <div class="metric-grid">
+        <article><strong>10</strong><span>Decision-ready publications</span></article>
         <article><strong>3</strong><span>Primary product lanes</span></article>
-        <article><strong>4</strong><span>Core data layers</span></article>
         <article><strong>90</strong><span>Day prototype-to-pilot plan</span></article>
         <article><strong>1</strong><span>Shared recovery data foundation</span></article>
       </div>
@@ -44,44 +44,68 @@
       <div class="section-heading">
         <span>01 / PUBLICATION LIBRARY</span>
         <h2>One strategy. Tailored for every decision-maker.</h2>
-        <p>The portal separates the core thesis into audience-specific publications while preserving a common source of truth.</p>
+        <p>The complete suite is now available as responsive online publications with print-to-PDF formatting, source notes, status disclosures, and audience-specific decisions.</p>
       </div>
       <div class="card-grid publication-grid">
         <article class="publication-card featured">
           <span>MASTER VOLUME</span>
           <h3>Master Strategy Book</h3>
-          <p>The canonical internal source covering vision, market, product, federal alignment, technology, security, pilots, commercialization, risks, and implementation.</p>
-          <button data-open="master">View outline</button>
+          <p>The canonical internal source covering vision, market, product, public-sector alignment, technology, security, pilots, commercialization, risks, and implementation.</p>
+          <button onclick="location.href='publications/document.html?doc=master'">Read publication</button>
+        </article>
+        <article class="publication-card">
+          <span>EXECUTIVE</span>
+          <h3>Corporate Overview</h3>
+          <p>A concise introduction for first meetings and cross-audience orientation.</p>
+          <button onclick="location.href='publications/document.html?doc=executive'">Read publication</button>
         </article>
         <article class="publication-card">
           <span>INVESTORS</span>
           <h3>Investor Strategy Memorandum</h3>
-          <p>Market timing, business model, defensibility, go-to-market, platform economics, capital strategy, and measurable milestones.</p>
-          <button data-open="investor">View outline</button>
+          <p>Market entry, business model, defensibility, proof plan, capital discipline, and diligence risks.</p>
+          <button onclick="location.href='publications/document.html?doc=investor'">Read publication</button>
         </article>
         <article class="publication-card">
           <span>GOVERNMENT</span>
           <h3>Government & FEMA White Paper</h3>
-          <p>Public benefit, statutory fit, preparedness, mitigation, Public Assistance, NFIP workflows, pilot design, and procurement pathways.</p>
-          <button data-open="government">View outline</button>
+          <p>Public benefit, current program status, NFIP and Public Assistance workflows, pilot design, governance, and evaluation.</p>
+          <button onclick="location.href='publications/document.html?doc=government'">Read publication</button>
         </article>
         <article class="publication-card">
           <span>CARRIERS</span>
           <h3>Carrier Executive Brief</h3>
-          <p>Claims cycle time, evidence quality, advance-payment confidence, customer experience, fraud controls, integration, security, and ROI.</p>
-          <button data-open="carrier">View outline</button>
+          <p>Evidence quality, claims workflow, ROI framework, integration, security, and a read-only carrier pilot.</p>
+          <button onclick="location.href='publications/document.html?doc=carrier'">Read publication</button>
         </article>
         <article class="publication-card">
           <span>MUNICIPAL</span>
           <h3>Municipal Pilot Proposal</h3>
-          <p>Asset inventory, community command map, resident onboarding, damage documentation, recovery metrics, and deployment scope.</p>
-          <button data-open="municipal">View outline</button>
+          <p>Asset readiness, resident enrollment, workstreams, governance, timeline, metrics, and authorization.</p>
+          <button onclick="location.href='publications/document.html?doc=municipal'">Read publication</button>
         </article>
         <article class="publication-card">
           <span>LEGISLATIVE</span>
           <h3>Congressional Brief</h3>
-          <p>A concise policy case for pre-disaster claims and asset readiness, taxpayer protection, resilience, and constituent recovery.</p>
-          <button data-open="congressional">View outline</button>
+          <p>A concise pilot concept with guardrails, required reporting, and current federal-program context.</p>
+          <button onclick="location.href='publications/document.html?doc=congressional'">Read publication</button>
+        </article>
+        <article class="publication-card">
+          <span>PARTNERS</span>
+          <h3>Strategic Partner Overview</h3>
+          <p>Partner roles, qualification, operating model, commercial structures, and pilot package.</p>
+          <button onclick="location.href='publications/document.html?doc=partner'">Read publication</button>
+        </article>
+        <article class="publication-card">
+          <span>ENGINEERING</span>
+          <h3>Technical Architecture</h3>
+          <p>Offline field capture, desktop review, API, geospatial data, evidence integrity, processing, and security.</p>
+          <button onclick="location.href='publications/document.html?doc=technical'">Read publication</button>
+        </article>
+        <article class="publication-card">
+          <span>PRODUCT</span>
+          <h3>Product Specification</h3>
+          <p>MVP scope, personas, requirements, evidence states, acceptance criteria, analytics, and deferred backlog.</p>
+          <button onclick="location.href='publications/document.html?doc=product'">Read publication</button>
         </article>
       </div>
     </section>
@@ -157,8 +181,8 @@
   </main>
 
   <footer>
-    <div><strong>RISK KAPTURE<sup>™</sup></strong><span>Confidential strategy portal</span></div>
-    <p>Prepared for executive, government, insurance, municipal, technical, and capital discussions. Claims and statutory interpretations require validation by qualified legal, regulatory, engineering, and insurance professionals before external reliance.</p>
+    <div><strong>RISK KAPTURE<sup>™</sup></strong><span>Executive strategy portal</span></div>
+    <p>Prepared for executive, government, insurance, municipal, technical, and capital discussions. Claims and statutory interpretations require validation by qualified legal, regulatory, engineering, insurance, and procurement professionals before external reliance.</p>
   </footer>
 
   <dialog id="publicationDialog">
