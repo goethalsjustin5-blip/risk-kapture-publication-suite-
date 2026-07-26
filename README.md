@@ -1,44 +1,58 @@
 # Risk Kapture™ Publication Suite
 
-A shareable executive briefing portal for the Risk Kapture disaster-readiness data platform.
+A live executive briefing portal and publication system for the Risk Kapture disaster-readiness data platform.
 
-## Open the project
+## Live site
 
-The website files are already complete enough to preview:
+- Executive portal: `https://goethalsjustin5-blip.github.io/risk-kapture-publication-suite-/`
+- Publication library: `https://goethalsjustin5-blip.github.io/risk-kapture-publication-suite-/publications/`
 
-- `index.html` — portal content and structure
-- `styles.css` — visual design and responsive layout
-- `app.js` — publication dialogs, glossary search, and theme controls
+## Complete publication library
 
-## Publish online — simplified setup
+The current release includes ten responsive, print-ready publications:
 
-Automatic deployment is already installed through GitHub Actions.
+1. Master Strategy Book
+2. Corporate Overview
+3. Investor Strategy Memorandum
+4. Government & FEMA White Paper
+5. Carrier Executive Brief
+6. Municipal Pilot Proposal
+7. Congressional Brief
+8. Strategic Partner Overview
+9. Technical Architecture
+10. Product Specification
 
-You only need to enable GitHub Pages once:
+Each publication includes:
 
-1. Open this repository.
-2. Select **Settings**.
-3. Select **Pages** in the left menu.
-4. Under **Build and deployment → Source**, choose **GitHub Actions**.
-
-GitHub will then publish every new update automatically.
-
-Expected public address:
-
-`https://goethalsjustin5-blip.github.io/risk-kapture-publication-suite-/`
-
-> The repository is currently private. GitHub Pages supports private repositories on certain paid plans. If Pages is unavailable, change the repository visibility to **Public** under **Settings → General → Danger Zone → Change repository visibility**, then return to **Settings → Pages**.
-
-## Current release
-
-- Responsive executive portal
+- Defined audience and purpose
+- Version and classification
+- Explicit document-status disclosure
+- The decision the publication is designed to support
+- Sticky table of contents and reading progress
+- Mobile and desktop layouts
 - Light and dark themes
-- Investor, government, carrier, municipal, congressional, and master-strategy publication outlines
-- Shared platform architecture visualization
-- Pilot vertical-slice roadmap
-- Searchable glossary
-- Mobile and print formatting
-- Automatic GitHub Pages deployment workflow
+- Browser Print / PDF output
+- Source links and program-status notes where applicable
+- Legal, regulatory, technical, financial, and operational caveats
+
+## Project structure
+
+```text
+index.html                         Executive portal
+styles.css                         Portal design system
+app.js                             Portal interactions and glossary
+publications/index.html            Publication library
+publications/document.html         Reusable document reader
+publications/documents.js          Complete publication content registry
+publications/publication.css       Publication design and print system
+publications/publication.js        Renderer, TOC, progress, print, and themes
+.github/workflows/deploy-pages.yml Automatic GitHub Pages deployment
+.github/workflows/validate-publications.yml Automated syntax and link validation
+```
+
+## Automatic deployment
+
+GitHub Pages is configured through GitHub Actions. Every push to `main` automatically validates and redeploys the site.
 
 ## Local preview
 
@@ -50,22 +64,9 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-## Planned publication library
-
-- Risk Kapture™ Master Strategy Book
-- Investor Strategy Memorandum
-- Government & FEMA White Paper
-- Carrier Executive Brief
-- Municipal Pilot Proposal
-- Congressional Brief
-- Partner Overview
-- Technical Architecture
-- Product Specification
-- Executive leave-behind and one-page opportunity summary
-
 ## Content controls
 
-This portal is currently a confidential strategy prototype. Federal-program descriptions, statutory interpretations, insurance workflows, security assertions, market estimates, and financial assumptions must be validated before formal external reliance.
+This portal is a strategic publication and demonstration environment. Insurance coverage, claim decisions, public-adjusting rules, grant eligibility, procurement, engineering, legal opinions, security requirements, financial forecasts, and customer-specific ROI must be validated by qualified professionals before operational or external reliance.
 
 ## Trademark notice
 
