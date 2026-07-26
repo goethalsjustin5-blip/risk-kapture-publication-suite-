@@ -1,0 +1,43 @@
+name: Validate Publication Suite
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate JavaScript syntax
+        run: |
+          node --check app.js
+          node --check publications/documents.js
+          node --check publications/publication.js
+
+      - name: Validate required publication files
+        run: |
+          test -f index.html
+          test -f publications/index.html
+          test -f publications/document.html
+          test -f publications/publication.css
+          test -f publications/documents.js
+          test -f publications/publication.js
+
+      - name: Validate publication registry
+        run: |
+          for key in master executive investor government carrier municipal congressional partner technical product; do
+            grep -q "  ${key}:" publications/documents.js
+          done
+
+      - name: Validate document links
+        run: |
+          for key in master executive investor government carrier municipal congressional partner technical product; do
+            grep -q "document.html?doc=${key}" publications/index.html
+          done
