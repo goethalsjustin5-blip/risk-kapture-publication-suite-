@@ -28,6 +28,11 @@ classification.textContent = record.classification;
 decision.textContent = record.decision;
 statusText.textContent = record.status;
 
+const financialCta = document.getElementById("financialCta");
+if (["master", "executive", "investor"].includes(documentKey)) {
+  financialCta.hidden = false;
+}
+
 content.innerHTML = record.sections.map((section, index) => {
   const id = section.id || `section-${index + 1}`;
   return `
