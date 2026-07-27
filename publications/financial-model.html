@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Risk Kapture financial projections, funding ask, use of funds, runway, and profitability analysis." />
+  <title>Risk Kapture™ | Financial Model & Funding Ask</title>
+  <link rel="stylesheet" href="publication.css" />
+  <style>
+    .financial-shell{width:min(1180px,calc(100% - 8vw));margin:0 auto;padding:58px 0 100px}.financial-hero{padding:70px 0 44px;border-bottom:1px solid var(--line)}
+    .financial-hero h1{max-width:950px;margin:14px 0 20px;font-size:clamp(3rem,6vw,6.3rem);line-height:.96;letter-spacing:-.055em}.financial-hero p{max-width:880px;color:var(--muted);font-size:1.12rem}
+    .headline-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:38px 0}.headline-grid article,.panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.headline-grid article{padding:24px}.headline-grid strong{display:block;font-size:2.2rem;line-height:1}.headline-grid span{display:block;margin-top:7px;color:var(--muted);font-size:.82rem}
+    .section{padding:62px 0;border-bottom:1px solid var(--line)}.section-heading{max-width:800px;margin-bottom:30px}.section-heading h2{margin:8px 0 10px;font-size:clamp(2rem,3.7vw,3.8rem);line-height:1.05;letter-spacing:-.04em}.section-heading p{color:var(--muted)}
+    .ask-box{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.ask-primary{padding:34px;background:linear-gradient(145deg,var(--surface),var(--surface-2));border:1px solid var(--line);border-radius:22px}.ask-primary .amount{font-size:clamp(4rem,8vw,7rem);line-height:.9;letter-spacing:-.06em;color:var(--blue);font-weight:850}.ask-primary h3{font-size:1.55rem}.ask-primary p{color:var(--muted)}.ask-secondary{padding:30px}.ask-secondary ul{padding-left:20px}.ask-secondary li{margin:10px 0}
+    .scenario-controls{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 24px}.scenario-controls button{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px 15px;border-radius:999px;font-weight:800}.scenario-controls button.active{background:var(--blue);border-color:var(--blue);color:white}
+    .scenario-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}.scenario-summary article{padding:22px;background:var(--surface-2);border:1px solid var(--line);border-radius:15px}.scenario-summary b{display:block;font-size:1.7rem}.scenario-summary span{color:var(--muted);font-size:.82rem}
+    .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px;background:var(--surface)}table{width:100%;border-collapse:collapse;min-width:760px}th,td{padding:14px 16px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}th:first-child,td:first-child{text-align:left}th{font-size:.74rem;letter-spacing:.08em;color:var(--muted);background:var(--surface-2)}tr:last-child td{border-bottom:0}.positive{color:#24a56a;font-weight:800}.negative{color:#d85b5b;font-weight:800}
+    .fund-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.fund-list{display:grid;gap:12px}.fund-item{padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}.fund-row{display:flex;justify-content:space-between;gap:20px;font-weight:800}.fund-item p{margin:6px 0 0;color:var(--muted);font-size:.88rem}.bar{height:7px;margin-top:12px;border-radius:10px;background:var(--surface-2);overflow:hidden}.bar i{display:block;height:100%;background:var(--blue);border-radius:10px}
+    .milestones{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.milestones article{padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:16px}.milestones small{color:var(--blue);font-weight:850;letter-spacing:.12em}.milestones h3{margin:10px 0}.milestones p{color:var(--muted);font-size:.9rem}
+    .assumption-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.assumption-grid article{padding:22px;border:1px solid var(--line);border-radius:15px;background:var(--surface)}.assumption-grid h3{margin-top:0}.assumption-grid p,.assumption-grid li{color:var(--muted);font-size:.9rem}
+    .callout-box{padding:28px;border-left:4px solid var(--blue);background:var(--surface-2);border-radius:0 16px 16px 0}.callout-box.warning{border-left-color:#d8a328}.callout-box.risk{border-left-color:#d85b5b}.download-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.download-row a,.print-button{display:inline-flex;padding:11px 16px;border-radius:10px;background:var(--surface);border:1px solid var(--line);font-weight:800}.print-button{color:var(--ink)}
+    .source-list li{margin:10px 0}.source-list a{color:var(--blue);text-decoration:underline}.fine-print{color:var(--muted);font-size:.82rem}
+    @media(max-width:900px){.headline-grid,.scenario-summary,.milestones{grid-template-columns:1fr 1fr}.ask-box,.fund-grid,.assumption-grid{grid-template-columns:1fr}}
+    @media(max-width:620px){.financial-shell{width:min(100% - 36px,1180px)}.headline-grid,.scenario-summary,.milestones{grid-template-columns:1fr}.financial-hero{padding-top:45px}.ask-primary .amount{font-size:4rem}}
+    @media print{.site-header,.scenario-controls,.download-row{display:none!important}.financial-shell{width:100%;padding:0}.section{padding:34px 0}.panel,.headline-grid article{box-shadow:none}.financial-hero h1{font-size:3.8rem}.financial-hero{padding-top:0}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html">RISK KAPTURE<sup>™</sup></a>
+    <nav><a href="index.html">Publication library</a><a href="document.html?doc=investor">Investor memo</a><a href="document.html?doc=master">Master strategy</a></nav>
+    <div class="header-actions"><button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme">◐</button></div>
+  </header>
+
+  <main class="financial-shell">
+    <section class="financial-hero">
+      <div class="eyebrow">FINANCIAL MODEL · FUNDING ASK · PROFITABILITY</div>
+      <h1>Fund the product through proof, commercialization, and operating break-even.</h1>
+      <p>This model converts Risk Kapture’s product roadmap and revenue strategy into a staged, assumption-driven financial plan. It is a planning model—not a forecast guarantee—and should be replaced with signed customer pricing, vendor quotes, payroll offers, and pilot economics as they become available.</p>
+      <div class="headline-grid">
+        <article><strong>$2.0M</strong><span>Recommended pre-seed raise</span></article>
+        <article><strong>27</strong><span>Base-case month of operating break-even</span></article>
+        <article><strong>24–27</strong><span>Months funded under base-case cash flow</span></article>
+        <article><strong>$19.0M</strong><span>Base-case Year 5 revenue</span></article>
+      </div>
+      <div class="download-row"><button class="print-button" type="button" onclick="window.print()">Print / Save PDF</button><a href="data/base-case-projection.csv" download>Download base projection CSV</a><a href="data/use-of-funds.csv" download>Download use-of-funds CSV</a><a href="data/monthly-runway.csv" download>Download monthly runway CSV</a></div>
+    </section>
+
+    <section class="section" id="ask">
+      <div class="section-heading"><span class="eyebrow">01 / THE ASK</span><h2>A $2.0 million pre-seed round.</h2><p>The capital target is sized to reach a pilot-ready product, complete controlled paid deployments, establish security and evidence controls, support enterprise sales cycles, and reach monthly operating break-even in the base case.</p></div>
+      <div class="ask-box">
+        <article class="ask-primary">
+          <div class="amount">$2.0M</div>
+          <h3>Recommended capital raise</h3>
+          <p>Target structure: early-stage equity or SAFE financing, subject to company formation, cap-table review, securities counsel, investor terms, and board approval. The model assumes no debt service.</p>
+          <div class="callout-box"><strong>Minimum viable first close: $750,000</strong><p>Funds approximately nine to ten months of product hardening, pilot preparation, legal architecture, and first customer deployment. A first close alone does not fund the full path to profitability.</p></div>
+        </article>
+        <article class="panel ask-secondary">
+          <h3>What the round must accomplish</h3>
+          <ul>
+            <li>Production-grade Home capture, evidence storage, review, and claim-package workflow.</li>
+            <li>Read-only Carrier console and Civic asset-readiness pilot.</li>
+            <li>Security architecture, privacy controls, contracts, insurance, and auditability.</li>
+            <li>At least four paid deployments or equivalent contracted revenue by Month 24.</li>
+            <li>Base-case Year 2 recognized revenue of $1.25 million and a credible path to Month 27 break-even.</li>
+          </ul>
+          <div class="callout-box warning"><strong>Why not $150,000–$300,000?</strong><p>That range can fund a narrow MVP and customer discovery. It cannot responsibly fund enterprise security, municipal implementation, carrier integration work, legal review, field operations, and a long sales cycle through profitability.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="scenarios">
+      <div class="section-heading"><span class="eyebrow">02 / FIVE-YEAR PROJECTION</span><h2>Three scenarios, one explicit base case.</h2><p>Select a scenario to view revenue, gross profit, operating expense, EBITDA, and the modeled break-even point. All amounts are U.S. dollars.</p></div>
+      <div class="scenario-controls"><button type="button" data-scenario="downside">Downside</button><button type="button" data-scenario="base" class="active">Base case</button><button type="button" data-scenario="upside">Upside</button></div>
+      <div class="scenario-summary"><article><b id="breakEvenMetric">Month 27</b><span>Monthly operating break-even</span></article><article><b id="capitalMetric">$2.0M</b><span>Modeled initial capital</span></article><article><b id="followOnMetric">No planned follow-on</b><span>Additional capital requirement</span></article></div>
+      <div class="table-wrap"><table><thead><tr><th>Metric</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Year 4</th><th>Year 5</th></tr></thead><tbody id="projectionBody"></tbody></table></div>
+      <div class="callout-box risk" style="margin-top:22px"><strong>Definition of profitability</strong><p>“Break-even” means positive monthly operating EBITDA before interest, taxes, depreciation, stock compensation, and unusual legal or financing costs. GAAP net income and positive free cash flow may occur later.</p></div>
+    </section>
+
+    <section class="section" id="revenue">
+      <div class="section-heading"><span class="eyebrow">03 / BASE-CASE REVENUE BUILD</span><h2>Revenue is diversified, but not assumed to arrive instantly.</h2><p>The model reflects long carrier and public-sector sales cycles. Year 1 is primarily paid validation. Material scale begins only after pilot evidence exists.</p></div>
+      <div class="table-wrap"><table><thead><tr><th>Revenue stream</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Year 4</th><th>Year 5</th></tr></thead><tbody>
+        <tr><td>Municipal pilots, implementation & SaaS</td><td>$125,000</td><td>$500,000</td><td>$1,200,000</td><td>$2,940,000</td><td>$6,050,000</td></tr>
+        <tr><td>Carrier pilots, white label & enterprise license</td><td>$50,000</td><td>$350,000</td><td>$1,400,000</td><td>$4,500,000</td><td>$9,900,000</td></tr>
+        <tr><td>Contractor / partner workspaces</td><td>$25,000</td><td>$250,000</td><td>$800,000</td><td>$1,600,000</td><td>$2,400,000</td></tr>
+        <tr><td>Claim-package and event fees</td><td>$0</td><td>$100,000</td><td>$600,000</td><td>$900,000</td><td>$350,000</td></tr>
+        <tr><td>Portfolio analytics and data products</td><td>$0</td><td>$50,000</td><td>$500,000</td><td>$260,000</td><td>$300,000</td></tr>
+        <tr><td><strong>Total revenue</strong></td><td><strong>$200,000</strong></td><td><strong>$1,250,000</strong></td><td><strong>$4,500,000</strong></td><td><strong>$10,200,000</strong></td><td><strong>$19,000,000</strong></td></tr>
+      </tbody></table></div>
+    </section>
+
+    <section class="section" id="funds">
+      <div class="section-heading"><span class="eyebrow">04 / USE OF FUNDS</span><h2>Spend against proof, not architecture for its own sake.</h2><p>The plan remains bootstrap-first. Approximately 67% of the raise is directed to product, pilots, and infrastructure; 23% covers legal, commercial, and administrative execution; 10% is retained as contingency and working capital.</p></div>
+      <div class="fund-grid">
+        <div class="fund-list">
+          <div class="fund-item"><div class="fund-row"><span>Product & engineering</span><span>$780,000 · 39%</span></div><p>Technical lead, mobile/full-stack engineering, backend/data, UX, QA, testing, and developer tooling.</p><div class="bar"><i style="width:39%"></i></div></div>
+          <div class="fund-item"><div class="fund-row"><span>Security, compliance, legal & insurance</span><span>$260,000 · 13%</span></div><p>Privacy and insurance counsel, contracts, entity/IP work, security review, penetration testing, E&O and cyber coverage.</p><div class="bar"><i style="width:13%"></i></div></div>
+          <div class="fund-item"><div class="fund-row"><span>Pilot delivery & customer success</span><span>$300,000 · 15%</span></div><p>Implementation, field operations, travel, equipment, onboarding, training, support, and measurement.</p><div class="bar"><i style="width:15%"></i></div></div>
+          <div class="fund-item"><div class="fund-row"><span>Sales, partnerships & market development</span><span>$220,000 · 11%</span></div><p>Business development, proposals, grant support, industry outreach, demonstrations, and partner recruitment.</p><div class="bar"><i style="width:11%"></i></div></div>
+          <div class="fund-item"><div class="fund-row"><span>Cloud, data, software & devices</span><span>$140,000 · 7%</span></div><p>Storage, database, mapping, observability, security tools, test devices, and controlled pilot environments.</p><div class="bar"><i style="width:7%"></i></div></div>
+          <div class="fund-item"><div class="fund-row"><span>G&A, finance & administration</span><span>$100,000 · 5%</span></div><p>Accounting, payroll, filings, operations, recruiting, communications, and basic administrative overhead.</p><div class="bar"><i style="width:5%"></i></div></div>
+          <div class="fund-item"><div class="fund-row"><span>Contingency & working capital</span><span>$200,000 · 10%</span></div><p>Schedule slippage, procurement timing, customer payment delays, incident response, and unplanned pilot requirements.</p><div class="bar"><i style="width:10%"></i></div></div>
+        </div>
+        <article class="panel" style="padding:30px">
+          <h3>Headcount and delivery posture</h3>
+          <p class="fine-print">The budget uses a blended employee/contractor model rather than immediately hiring a full enterprise organization.</p>
+          <h4>Months 1–6</h4><ul><li>Founder / product lead</li><li>Fractional technical lead</li><li>Two engineering contractors</li><li>Fractional UX, insurance, privacy, and security support</li></ul>
+          <h4>Months 7–12</h4><ul><li>Lead engineer or CTO-equivalent</li><li>Mobile/full-stack engineer</li><li>Backend/data engineer</li><li>Pilot manager / customer success</li><li>QA and security contractors</li></ul>
+          <h4>Months 13–24</h4><ul><li>Five to seven full-time-equivalent operating team</li><li>Dedicated customer success and partnerships capacity</li><li>Incremental hiring tied to contracted revenue and deployment load</li></ul>
+          <div class="callout-box"><strong>Compensation basis</strong><p>Staffing assumptions are deliberately below a fully built enterprise team and use blended contracting. National BLS benchmarks show May 2025 mean annual wages of approximately $148,100 for software developers, $132,510 for information security analysts, $126,800 for data scientists, and $110,740 for project management specialists. Private-industry benefits represented 30.1% of employer compensation in March 2026, which is why fully loaded hiring materially exceeds salary alone.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="milestones">
+      <div class="section-heading"><span class="eyebrow">05 / CAPITAL MILESTONES</span><h2>The raise is released against measurable de-risking.</h2></div>
+      <div class="milestones">
+        <article><small>MONTH 3</small><h3>Production foundation</h3><p>Sanitized demo, domain model, identity, property/policy intake, evidence architecture, initial security plan, and signed pilot target criteria.</p></article>
+        <article><small>MONTH 6</small><h3>Pilot-ready MVP</h3><p>Mobile capture, evidence upload, human-reviewed scope, claim-package export, audit events, and controlled administrator review.</p></article>
+        <article><small>MONTH 9</small><h3>First paid deployment</h3><p>Paid municipal, partner, or carrier-adjacent pilot with baseline metrics, implementation SOPs, consent, and support process.</p></article>
+        <article><small>MONTH 12</small><h3>Carrier validation</h3><p>Read-only carrier workflow testing completeness, evidence quality, review effort, and payment-support use cases without automated settlement claims.</p></article>
+        <article><small>MONTH 18</small><h3>Repeatability</h3><p>Multiple deployments, referenceable outcomes, standardized onboarding, measurable gross margin, and enterprise security remediation plan.</p></article>
+        <article><small>MONTH 24–27</small><h3>Break-even threshold</h3><p>Base-case Year 2 revenue of $1.25 million, accelerating contracted backlog, and monthly operating EBITDA turning positive in Month 27.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="assumptions">
+      <div class="section-heading"><span class="eyebrow">06 / CORE ASSUMPTIONS</span><h2>What must be validated before the numbers become a forecast.</h2></div>
+      <div class="assumption-grid">
+        <article><h3>Municipal economics</h3><ul><li>Initial paid pilot/implementation: approximately $125,000.</li><li>Recurring municipal platform: approximately $60,000–$110,000 annually by scope and population.</li><li>Procurement cycle: six to twelve months unless using a qualified partner or existing vehicle.</li></ul></article>
+        <article><h3>Carrier economics</h3><ul><li>Discovery or controlled pilot: approximately $250,000–$400,000.</li><li>Production white-label platform: approximately $500,000–$1.1 million annually with implementation and usage.</li><li>Sales and security review: twelve to twenty-four months without an incumbent channel partner.</li></ul></article>
+        <article><h3>Partner SaaS and packages</h3><ul><li>Partner/contractor workspace begins with the existing directional assumption of $99 per month.</li><li>Base planning should use 2%–5% free-to-paid conversion and 5%–8% monthly churn until real cohorts exist.</li><li>Completed package fee assumption: approximately $75–$125, preferably sponsored by a carrier, municipality, or partner.</li></ul></article>
+        <article><h3>Gross margin and cloud</h3><ul><li>Gross margin expands from 60% in Year 1 to 81% in Year 5 as implementation becomes standardized.</li><li>Cloud is modeled as usage-based rather than a fixed enterprise commitment.</li><li>Evidence-heavy storage, retrieval, mapping, support, and human review remain direct costs and must be measured per property and claim.</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section" id="risks">
+      <div class="section-heading"><span class="eyebrow">07 / FINANCIAL RISKS</span><h2>The downside case requires more capital.</h2></div>
+      <div class="callout-box risk"><strong>Downside outcome</strong><p>If municipal procurement, carrier security review, and paid pilot conversion take longer than modeled, monthly operating break-even moves to approximately Month 42. Under that scenario, the initial $2.0 million raise is not sufficient; the company would likely need an additional $1.0–$1.2 million or equivalent non-dilutive and customer-funded capital.</p></div>
+      <ul>
+        <li>Customer concentration during the first three years.</li>
+        <li>Slow public procurement and reimbursement timing.</li>
+        <li>Carrier integration and security requirements expanding scope.</li>
+        <li>High field-support cost if onboarding is not self-service.</li>
+        <li>Evidence storage, media processing, and human-review costs exceeding assumptions.</li>
+        <li>Unauthorized-public-adjusting, privacy, insurance, procurement, or data-rights issues delaying commercialization.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="sources">
+      <div class="section-heading"><span class="eyebrow">08 / BASIS & SOURCES</span><h2>Benchmark-supported assumptions, not invented certainty.</h2></div>
+      <ol class="source-list">
+        <li><a href="https://www.bls.gov/news.release/ocwage.t01.htm" target="_blank" rel="noreferrer">U.S. Bureau of Labor Statistics — May 2025 national occupational employment and wage data</a></li>
+        <li><a href="https://www.bls.gov/news.release/ecec.nr0.htm" target="_blank" rel="noreferrer">U.S. Bureau of Labor Statistics — Employer Costs for Employee Compensation, March 2026</a></li>
+        <li><a href="https://aws.amazon.com/s3/pricing/" target="_blank" rel="noreferrer">Amazon S3 pricing and cost components</a></li>
+        <li><a href="https://aws.amazon.com/rds/postgresql/pricing/" target="_blank" rel="noreferrer">Amazon RDS for PostgreSQL pricing framework</a></li>
+      </ol>
+      <p class="fine-print">Revenue pricing, customer counts, sales timing, gross margins, hiring sequence, and the funding structure are management assumptions requiring validation. This document is not an offer to sell securities, investment advice, tax advice, accounting advice, or a substitute for counsel and a reviewed financial model.</p>
+    </section>
+  </main>
+
+  <footer class="document-footer"><div><strong>RISK KAPTURE™</strong><span>Financial Model & Funding Ask · Version 1.0 · July 2026</span></div><p>Confidential planning draft. Replace assumptions with customer contracts, vendor quotes, payroll offers, tax treatment, capital terms, and an accountant-reviewed model before formal fundraising reliance.</p></footer>
+
+  <script>
+    const scenarios={
+      downside:{breakEven:'Month 42',capital:'$2.0M',followOn:'$1.0M–$1.2M likely',revenue:[100000,650000,2200000,5800000,11500000],margin:[.55,.62,.68,.74,.78],opex:[1000000,1350000,2400000,4100000,6500000]},
+      base:{breakEven:'Month 27',capital:'$2.0M',followOn:'No planned follow-on',revenue:[200000,1250000,4500000,10200000,19000000],margin:[.60,.68,.74,.78,.81],opex:[1050000,1450000,2850000,5250000,8500000]},
+      upside:{breakEven:'Month 22',capital:'$2.0M',followOn:'Not required by model',revenue:[300000,2000000,7000000,16000000,30000000],margin:[.62,.70,.76,.80,.82],opex:[1100000,1550000,3600000,7000000,12000000]}
+    };
+    const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
+    function renderScenario(name){const s=scenarios[name],gp=s.revenue.map((r,i)=>r*s.margin[i]),ebitda=gp.map((g,i)=>g-s.opex[i]);document.getElementById('breakEvenMetric').textContent=s.breakEven;document.getElementById('capitalMetric').textContent=s.capital;document.getElementById('followOnMetric').textContent=s.followOn;const rows=[['Revenue',s.revenue,''],['Gross margin',s.margin,'percent'],['Gross profit',gp,''],['Operating expense',s.opex,''],['Operating EBITDA',ebitda,'signed']];document.getElementById('projectionBody').innerHTML=rows.map(([label,values,type])=>`<tr><td><strong>${label}</strong></td>${values.map(v=>{if(type==='percent')return `<td>${Math.round(v*100)}%</td>`;const cls=type==='signed'?(v>=0?'positive':'negative'):'';return `<td class="${cls}">${money(v)}</td>`}).join('')}</tr>`).join('');document.querySelectorAll('[data-scenario]').forEach(b=>b.classList.toggle('active',b.dataset.scenario===name));}
+    document.querySelectorAll('[data-scenario]').forEach(b=>b.addEventListener('click',()=>renderScenario(b.dataset.scenario)));renderScenario('base');
+    const toggle=document.getElementById('themeToggle'),saved=localStorage.getItem('rk-publication-theme');if(saved)document.documentElement.dataset.theme=saved;toggle.addEventListener('click',()=>{const next=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=next;localStorage.setItem('rk-publication-theme',next)});
+  </script>
+</body>
+</html>
